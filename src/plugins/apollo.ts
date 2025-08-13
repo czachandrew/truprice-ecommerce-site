@@ -2,7 +2,7 @@ import { ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client/core
 import { setContext } from '@apollo/client/link/context'
 
 const httpLink = createHttpLink({
-  uri: 'http://127.0.0.1:8000/graphql/',
+  uri: 'https://tru-prime-f4f949ce5752.herokuapp.com/graphql/',
   fetchOptions: {
     mode: 'cors',
   }

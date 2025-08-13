@@ -249,7 +249,7 @@ export const useQuoteStore = defineStore('quote', () => {
         'Authorization': token ? `JWT ${token}` : '',
       }
       
-      const response = await fetch('http://127.0.0.1:8000/upload-quote/', {
+      const response = await fetch('https://tru-prime-f4f949ce5752.herokuapp.com/upload-quote/', {
         method: 'POST',
         body: formData,
         headers,
